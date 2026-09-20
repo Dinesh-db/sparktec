@@ -1,0 +1,227 @@
+/* Main Page Layout */
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+  font-family: 'Inter', sans-serif;
+  color: #E8EDF2;
+  background-color: #0D1B2A;
+}
+
+/* Header Styling */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.contact-header h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-header p {
+  font-size: 1.1rem;
+  color: #94A3B8;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-header::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #E8A020;
+  margin: 20px auto 0 auto;
+}
+
+/* Two-Column Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* Left Column: Industrial Contact Info Box */
+.contact-info-card {
+  background: #112233;
+  border: 1px solid #1C4E80;
+  border-left: 5px solid #E8A020;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.company-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.proprietor-tag {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  color: #E8A020;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1C4E80;
+  padding-bottom: 10px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
+.info-icon {
+  font-size: 1.4rem;
+  margin-right: 18px;
+  margin-top: 2px;
+  color: #E8A020;
+}
+
+.info-content h4 {
+  font-family: 'Barlow Condensed', sans-serif;
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-content p, 
+.info-content a {
+  margin: 0;
+  font-size: 1rem;
+  color: #E8EDF2;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.info-content a {
+  transition: color 0.2s ease;
+}
+
+.info-content a:hover {
+  color: #E8A020;
+  text-decoration: underline;
+}
+
+/* Right Column: Industrial Inquiry Form */
+.contact-form-card {
+  background: #112233;
+  border: 1px solid #1C4E80;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.contact-form-card h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1C4E80;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #E8EDF2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  border: 1px solid #1C4E80;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #E8A020;
+  box-shadow: 0 0 8px rgba(232, 160, 32, 0.25);
+  background-color: #09131d;
+}
+
+/* Angular Sharp Industrial CTA Button */
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  background-color: #E8A020;
+  color: #0D1B2A;
+  border: none;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+  transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #FFFFFF;
+  color: #0D1B2A;
+  transform: translateY(-2px);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px 16px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 25px;
+  }
+
+  .contact-header h1 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,326 @@
+/* Main Container */
+.products-container {
+  background-color: #0D1B2A;
+  color: #E8EDF2;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Header Section */
+.products-header {
+  padding: 80px 24px 60px 24px;
+  background: linear-gradient(135deg, #0D1B2A 0%, #1C4E80 100%);
+  border-bottom: 3px solid #E8A020;
+  text-align: center;
+}
+
+.header-badge {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #E8A020;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(232, 160, 32, 0.1);
+  border: 1px solid #E8A020;
+  padding: 6px 14px;
+  margin-bottom: 20px;
+}
+
+.products-header h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.1;
+}
+
+.header-lead {
+  font-size: 1.15rem;
+  color: #94A3B8;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Category Filter Bar */
+.filter-section {
+  background: #08111B;
+  border-bottom: 1px solid #1C4E80;
+  padding: 20px 24px;
+  position: sticky;
+  top: 76px;
+  z-index: 100;
+}
+
+.filter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.filter-btn {
+  background: #112233;
+  color: #94A3B8;
+  border: 1px solid #1C4E80;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  color: #FFFFFF;
+  border-color: #E8A020;
+}
+
+.filter-btn.active {
+  background: #E8A020;
+  color: #0D1B2A;
+  border-color: #E8A020;
+  clip-path: polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px);
+}
+
+/* Products Grid Section */
+.products-grid-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.product-category-card {
+  background: #112233;
+  border: 1px solid #1C4E80;
+  border-top: 4px solid #1C4E80;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.product-category-card:hover {
+  border-top-color: #E8A020;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card-header-bar {
+  border-bottom: 1px solid #1C4E80;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.category-code {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #E8A020;
+  letter-spacing: 1px;
+}
+
+.card-header-bar h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.8rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 5px 0 0 0;
+}
+
+.parts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 25px 0;
+}
+
+.part-item {
+  font-size: 1rem;
+  color: #94A3B8;
+  padding: 8px 0;
+  border-bottom: 1px dashed rgba(28, 78, 128, 0.4);
+  display: flex;
+  align-items: center;
+}
+
+.part-item:last-child {
+  border-bottom: none;
+}
+
+.part-bullet {
+  color: #E8A020;
+  margin-right: 12px;
+  font-size: 0.8rem;
+}
+
+.card-footer-cta {
+  padding-top: 15px;
+  border-top: 1px solid #1C4E80;
+}
+
+.inquire-link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #E8A020;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+.inquire-link:hover {
+  color: #FFFFFF;
+}
+
+/* Custom Parts Banner */
+.custom-parts-banner {
+  max-width: 1200px;
+  margin: 20px auto 0 auto;
+  padding: 60px 24px;
+  background: #1C4E80;
+  border-left: 5px solid #E8A020;
+  text-align: center;
+}
+
+.banner-content h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.6rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  color: #E8EDF2;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .products-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .filter-section {
+    top: 68px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* Search and Download Bar */
+.catalog-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.parts-search-input {
+  width: 100%;
+  max-width: 420px;
+  padding: 12px 18px;
+  background: #112233;
+  border: 1px solid #1C4E80;
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  outline: none;
+  border-radius: 2px;
+}
+
+.parts-search-input:focus {
+  border-color: #E8A020;
+}
+
+.download-btn {
+  background: transparent;
+  border: 1px solid #E8A020;
+  color: #E8A020;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 11px 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.download-btn:hover {
+  background: #E8A020;
+  color: #0D1B2A;
+}
+
+/* Category Card Image Styles */
+.card-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+  border-bottom: 2px solid #1C4E80;
+}
+
+.category-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1.1);
+  transition: transform 0.3s ease;
+}
+
+.product-category-card:hover .category-card-image {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.category-code {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(13, 27, 42, 0.85);
+  border: 1px solid #E8A020;
+  color: #E8A020;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  letter-spacing: 1px;
+}
+
+.card-body {
+  padding: 20px 0 10px 0;
+}
+
+.card-body h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.7rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}

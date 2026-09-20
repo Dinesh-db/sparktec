@@ -1,0 +1,314 @@
+/* Container */
+.om-container {
+  background-color: #0D1B2A;
+  color: #E8EDF2;
+  font-family: 'Inter', sans-serif;
+  padding-bottom: 60px;
+}
+
+/* Header Section */
+.om-header {
+  padding: 80px 24px 60px 24px;
+  background: linear-gradient(135deg, #0D1B2A 0%, #1C4E80 100%);
+  border-bottom: 3px solid #E8A020;
+  text-align: center;
+}
+
+.header-badge {
+  display: inline-block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #E8A020;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgba(232, 160, 32, 0.1);
+  border: 1px solid #E8A020;
+  padding: 6px 14px;
+  margin-bottom: 20px;
+}
+
+.om-header h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  line-height: 1.1;
+}
+
+.header-lead {
+  font-size: 1.15rem;
+  color: #94A3B8;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Stats Counter Grid */
+.om-stats-grid {
+  max-width: 900px;
+  margin: 40px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.om-stat-card {
+  background: rgba(17, 34, 51, 0.8);
+  border: 1px solid #1C4E80;
+  border-top: 3px solid #E8A020;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-number {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #E8A020;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Operational Scope Section */
+.om-scope-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.section-title-center {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title-center h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+
+.section-title-center p {
+  color: #E8A020;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Tabs */
+.om-tabs-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.om-tab-btn {
+  background: #112233;
+  color: #94A3B8;
+  border: 1px solid #1C4E80;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.om-tab-btn:hover {
+  color: #FFFFFF;
+  border-color: #E8A020;
+}
+
+.om-tab-btn.active {
+  background: #E8A020;
+  color: #0D1B2A;
+  border-color: #E8A020;
+}
+
+/* Scope Dynamic Card */
+.om-scope-card {
+  background: #112233;
+  border: 1px solid #1C4E80;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  overflow: hidden;
+}
+
+.om-scope-image-wrapper {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+}
+
+.om-scope-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.om-scope-details {
+  padding: 30px 30px 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.om-scope-details h3 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+
+.om-scope-desc {
+  font-size: 1rem;
+  color: #94A3B8;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.om-points-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.om-points-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  color: #E8EDF2;
+  margin-bottom: 12px;
+}
+
+.check-icon {
+  color: #E8A020;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+/* Matrix Table Section */
+.matrix-section {
+  background: #08111B;
+  border-top: 1px solid #1C4E80;
+  border-bottom: 1px solid #1C4E80;
+  padding: 80px 24px;
+}
+
+.table-responsive {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+.om-comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #112233;
+  border: 1px solid #1C4E80;
+  text-align: left;
+}
+
+.om-comparison-table th {
+  background: #0D1B2A;
+  color: #FFFFFF;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 18px 20px;
+  border-bottom: 2px solid #1C4E80;
+}
+
+.om-comparison-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid #1C4E80;
+  font-size: 0.95rem;
+  color: #94A3B8;
+}
+
+.om-comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.feature-name {
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+.highlight-column {
+  background: rgba(232, 160, 32, 0.05);
+  border-left: 2px solid #E8A020;
+  border-right: 2px solid #E8A020;
+  color: #E8EDF2 !important;
+}
+
+th.highlight-column {
+  color: #E8A020 !important;
+  border-top: 3px solid #E8A020;
+}
+
+/* CTA Banner */
+.om-cta-banner {
+  max-width: 1200px;
+  margin: 60px auto 0 auto;
+  padding: 60px 24px;
+  background: #1C4E80;
+  border-left: 5px solid #E8A020;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #E8EDF2;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+  line-height: 1.6;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .om-scope-card {
+    grid-template-columns: 1fr;
+  }
+
+  .om-scope-details {
+    padding: 20px;
+  }
+
+  .om-header h1 {
+    font-size: 2.4rem;
+  }
+}
